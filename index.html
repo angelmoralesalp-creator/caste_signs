@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CASTER SIGN</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="pantalla">
+    <section id="inicio" class="panel">
+      <div class="castor" aria-hidden="true">🦫</div>
+      <h1>CASTER SIGN</h1>
+      <p>Aprende. Comunica. Conecta.</p>
+      <p class="descripcion">
+        Aprende Lengua de Señas Mexicana
+        mientras recorres el bosque.
+      </p>
+      <button id="entrar">Entrar al mapa</button>
+    </section>
+
+    <section id="mapa" class="panel oculto">
+      <h2>Tu aventura comienza aquí</h2>
+      <div id="escenario">
+        <div class="bosque bosque-izquierdo">🌲 🌿 🌳</div>
+        <div class="rio">
+          <button class="presa" data-nivel="1">1</button>
+          <button class="presa" data-nivel="2">2</button>
+          <button class="presa" data-nivel="3">3</button>
+          <button class="presa" data-nivel="4">4</button>
+          <button class="presa" data-nivel="5">5</button>
+          <button class="presa" data-nivel="6">6</button>
+          <button class="presa" data-nivel="7">7</button>
+          <button class="presa" data-nivel="8">8</button>
+          <button class="cascada" data-nivel="9">9</button>
+        </div>
+        <div class="bosque bosque-derecho">🌳 🌿 🌲</div>
+      </div>
+      <p id="mensaje" role="status">
+        Selecciona una presa para comenzar.
+      </p>
+      <button id="volver">Volver al inicio</button>
+    </section>
+  </main>
+</body>
+</html>
